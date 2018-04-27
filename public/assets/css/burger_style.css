@@ -1,0 +1,22 @@
+
+body {
+    background-color: orange;
+}
+
+h1 {
+   color: blue;
+}
+
+textarea {
+    background-color: white;
+    width: 30%;
+}
+
+#order {
+    font-size: 33px;
+    color: black;
+}
+
+li {
+    font-size: 18px;
+}
