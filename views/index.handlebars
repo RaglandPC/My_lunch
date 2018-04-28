@@ -18,10 +18,10 @@
 					<li class="list-group-item">
 						<div class="input-group">
 							<p class="lead"> {{this.burger_name}} </p>
-							<span class="input-group-btn">
+							<span class="input-group-btn"></span>
 								<form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
 									<input type="hidden" name="devoured" value="true">
-									<button class="waves-effect waves-light btn" type="submit"> EAT IT! </button>
+									<button class="waves-effect waves-light btn" class="eat" type="submit"> EAT IT! </button>
 								</form>
 							</span>
 						</div>
@@ -36,7 +36,7 @@
 		{{!-- burger list after being eaten --}}
 	
 		<div class="col s6">
-		    <h4 class="red_font">Ready to eat!</h4>
+		    <h4 class="red_font">Someone eat this already!</h4>
 				<ul class="list-group">
 				{{#each burgers}}
 					{{#if this.devoured}}
@@ -74,7 +74,7 @@
 
   <!-- Submit Button -->
   <center>
-    <button id="submit-button" type="button" class="waves-effect waves-light btn">Place Order</button>
+    <button id="submit-button" class="bur" type="button" class="waves-effect waves-light btn">Place Order</button>
   </center>
   <br><br>
 
